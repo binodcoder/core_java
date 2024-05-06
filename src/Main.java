@@ -11,30 +11,18 @@ class Shape {
         this.colour = colour;
         this.area = area;
     }
-<<<<<<< HEAD
-    Shape(String colour, double area) {
-        this.colour = colour;
-        this.area = area;
-    }
-=======
+
 
     Shape(double area){
         this.area=area;
     }
 
->>>>>>> 6a69c2f26198bd230a5a8aa01188f299f6834402
+
     Shape(Shape s1) {
         this.colour = s1.colour;
         this.area = s1.area;
     }
-<<<<<<< HEAD
-    void findArea() {
-=======
 
-    void findArea() {
-
->>>>>>> 6a69c2f26198bd230a5a8aa01188f299f6834402
-    }
 }
 
 public class Main {
