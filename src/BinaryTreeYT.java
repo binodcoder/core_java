@@ -50,7 +50,7 @@ public class BinaryTreeYT {
         postorder(root.left);
         postorder(root.right);
         System.out.println(root.data + " ");
-        ;
+
     }
     public static void levelOrder(Node root) {
         if (root == null) {
