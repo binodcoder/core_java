@@ -12,6 +12,8 @@ public class House {
         this.toilets = toilets;
 
     }
+
+    //methods
     void findingArea(){
         System.out.println("This is the finding area functions.");
     }
