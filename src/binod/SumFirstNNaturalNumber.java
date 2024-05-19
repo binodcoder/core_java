@@ -7,7 +7,7 @@ public class SumFirstNNaturalNumber {
         int inputNumber=scanner.nextInt();
         int sum=0;
 
-        for(int i=1;i<inputNumber;i++){
+        for(int i=1;i<=inputNumber;i++){
             sum=sum+i;
 
 
