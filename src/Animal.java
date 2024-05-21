@@ -20,18 +20,15 @@ public class Animal {
     Animal(String name, float weight) {
         this.name = name;
         this.weight = weight;
-
     }
 
     Animal(String name) {
         this.name = name;
-
     }
 
     Animal(String size, String name) {
         this.size = size;
         this.name = name;
-
     }
 
     //copy constructor
@@ -40,6 +37,5 @@ public class Animal {
         this.weight = animal.weight;
         this.size = animal.size;
     }
-
 }
 
