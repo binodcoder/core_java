@@ -1,8 +1,7 @@
 package binod;
 public class CalculateFactorial {
     public static void main(String[] args) {
-        int fac=calcFactorial(5);
-        System.out.println(fac);
+        System.out.println(calcFactorial(5));
     }
     public static int calcFactorial(int n){
         if(n==1||n==0){
