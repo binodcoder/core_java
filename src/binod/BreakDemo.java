@@ -12,6 +12,5 @@ public class BreakDemo {
             }
             System.out.println(n);
         }while(true);
-
     }
 }
