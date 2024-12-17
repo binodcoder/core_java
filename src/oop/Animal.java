@@ -1,14 +1,14 @@
 package oop;
 public class Animal {
     String name;
-    float weight;
-    String size;
 
+    float weight;
+
+    String size;
     //a constructor is an especial method that execute at the beginning when object of class is created.
 
     //no parameterized
     Animal() {
-
     }
 
     //parameterized
