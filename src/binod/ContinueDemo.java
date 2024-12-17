@@ -18,7 +18,7 @@ class ContinueDemo1 {
         do {
             System.out.println("Enter any number");
             int n = sc.nextInt();
-            if (n == 10) {
+            if (n % 10==0) {
                 continue;
             }
             System.out.println(n);

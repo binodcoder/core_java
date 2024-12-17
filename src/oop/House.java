@@ -1,3 +1,4 @@
+package oop;
 public class House {
     //this is data declaration while creating class
     String name;
@@ -63,7 +64,7 @@ public class House {
         this.toilets = toilets;
     }
     //copy constructor
-    //h1 is the data type of House that's why it expect the data type house as we have created h1 in main folder
+    //h1 is the data type of oop.House that's why it expect the data type house as we have created h1 in main folder
     House(House h1){
       this.name=h1.name;
       this.toilets=h1.toilets;

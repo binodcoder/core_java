@@ -1,3 +1,4 @@
+package oop;
 public class Animal {
     String name;
     float weight;

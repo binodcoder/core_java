@@ -1,3 +1,4 @@
+package oop;
 class Shape {
     String colour;
     double area;
@@ -61,7 +62,7 @@ public class Main {
         System.out.println(f1.breadth);
 
         System.out.println("This is h1 house");
-        House h1 = new House("Aakritiko House", 4, 2);
+        House h1 = new House("Aakritiko oop.House", 4, 2);
         System.out.println(h1.name);
         System.out.println(h1.bedrooms);
         System.out.println(h1.toilets);

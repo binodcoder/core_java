@@ -1,3 +1,4 @@
+package oop;
 public class Vehicle {
     String name;
     int price;

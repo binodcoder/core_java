@@ -1,3 +1,4 @@
+package oop;
 public class Machine {
     //data declaration
     String name;

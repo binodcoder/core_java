@@ -1,3 +1,4 @@
+package oop;
 public class Furniture {
     String name;
     int breadth;
@@ -9,6 +10,6 @@ public class Furniture {
 
 }
 //why we make constructor: to make the object.
-//syntax of object Wall s1= new House();
-//public class House{}
-// this is constructor House(){}
+//syntax of object Wall s1= new oop.House();
+//public class oop.House{}
+// this is constructor oop.House(){}
