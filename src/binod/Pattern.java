@@ -10,6 +10,18 @@ public class Pattern {
     }
 }
 
+class Pattern1 {
+    public static void main(String[] args) {
+        int n = 5;
+        for (int line = n; line >= 1; line--) {
+            for (int number = 1; number <= line; number++) {
+                System.out.print(number);
+            }
+            System.out.println();
+        }
+    }
+}
+
 class Pattern2 {
     public static void main(String[] args) {
         for (int line = 0; line < 5; line++) {
@@ -73,6 +85,19 @@ class Pattern7 {
             for (int chars = 1; chars <= line; chars++) {
                 System.out.print(ch);
                 ch++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+class Pattern8 {
+    public static void main(String[] args) {
+        int num = 1;
+        for (int line = 1; line <= 5; line++) {
+            for (int number = 1; number <= line; number++) {
+                System.out.print(num);
+                num += 1;
             }
             System.out.println();
         }
