@@ -61,6 +61,13 @@ public class FunctionDemo {
         }
     }
 
+    public static void binToDec(int binNum){
+        int ld=0;
+        int
+    }
+
+
+
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter side of a square");
