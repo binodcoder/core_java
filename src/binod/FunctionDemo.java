@@ -61,12 +61,17 @@ public class FunctionDemo {
         }
     }
 
-    public static void binToDec(int binNum){
-        int ld=0;
-        int
+    public static void binToDec(int binNum) {
+        int power = 0;
+        int dnum = 0;
+        while (binNum > 0) {
+            int ld = binNum % 10;
+            dnum = dnum + (ld * (int) Math.pow(2, power));
+            power++;
+            binNum = binNum / 10;
+        }
+        System.out.println(dnum);
     }
-
-
 
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
@@ -80,6 +85,7 @@ public class FunctionDemo {
 //        System.out.println(findFactorial(3));
 //        System.out.println(findBinomialCoefficient(4, 2));
 //        System.out.println(isPrime(12));
-        printPrime(10);
+        //  printPrime(10);
+        binToDec(101);
     }
 }
