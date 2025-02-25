@@ -73,6 +73,16 @@ public class FunctionDemo {
         System.out.println(dnum);
     }
 
+    public static void decToBinary(int decimalNum) {
+        int binNum = 0;
+        while (decimalNum > 0) {
+            int rem = decimalNum % 2;
+            binNum = (binNum * 10) + rem;
+            decimalNum = decimalNum / 2;
+        }
+        System.out.println(binNum);
+    }
+
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter side of a square");
@@ -87,5 +97,6 @@ public class FunctionDemo {
 //        System.out.println(isPrime(12));
         //  printPrime(10);
         binToDec(101);
+        decToBinary(5);
     }
 }
