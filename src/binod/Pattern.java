@@ -126,3 +126,55 @@ class Pattern9{
 
     }
 }
+
+class Pattern10{
+    public static void inverted_rotated_half_pyramid(int n){
+        //outer
+        for(int i=1;i<=n;i++){
+            //spaces
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            //stars
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+    public static void main(String[] args) {
+        inverted_rotated_half_pyramid(4);
+    }
+}
+
+class Pattern11{
+
+    public static void invertedHalfPyramidWithNumbers(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        invertedHalfPyramidWithNumbers(5);
+    }
+}
+
+class Pattern12{
+    public static  void fLoydsTriangle(int n){
+        int c=1;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(c+ " ");
+                c++;
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        fLoydsTriangle(5);
+    }
+}
