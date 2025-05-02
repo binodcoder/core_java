@@ -1,4 +1,5 @@
 package binod;
+
 public class Pattern {
     public static void main(String[] args) {
         for (int i = 4; i > 0; i--) {
@@ -104,77 +105,234 @@ class Pattern8 {
     }
 }
 
-class Pattern9{
-    public static void hollow_rectangle(int totRows, int totCols){
+class Pattern9 {
+    public static void hollow_rectangle(int totRows, int totCols) {
         //outer loop
-        for(int i=1;i<=totRows;i++){
+        for (int i = 1; i <= totRows; i++) {
             //inner - columns
-            for(int j=1;j<=totCols;j++){
+            for (int j = 1; j <= totCols; j++) {
                 //cell - (i,j)
-                if(i==1 ||i==totRows || j==1 || j==totCols){
+                if (i == 1 || i == totRows || j == 1 || j == totCols) {
                     //boundary cells
                     System.out.print("*");
-                }else{
+                } else {
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
-        hollow_rectangle(4,5);
+        hollow_rectangle(4, 5);
 
     }
 }
 
-class Pattern10{
-    public static void inverted_rotated_half_pyramid(int n){
+class Pattern10 {
+    public static void inverted_rotated_half_pyramid(int n) {
         //outer
-        for(int i=1;i<=n;i++){
+        for (int i = 1; i <= n; i++) {
             //spaces
-            for(int j=1;j<=n-i;j++){
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
             //stars
-            for(int j=1;j<=i;j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
 
     }
+
     public static void main(String[] args) {
         inverted_rotated_half_pyramid(4);
     }
 }
 
-class Pattern11{
+class Pattern11 {
 
-    public static void invertedHalfPyramidWithNumbers(int n){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n-i+1;j++){
+    public static void invertedHalfPyramidWithNumbers(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i + 1; j++) {
                 System.out.print(j);
             }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
         invertedHalfPyramidWithNumbers(5);
     }
 }
 
-class Pattern12{
-    public static  void fLoydsTriangle(int n){
-        int c=1;
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                System.out.print(c+ " ");
+class Pattern12 {
+    public static void fLoydsTriangle(int n) {
+        int c = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(c + " ");
                 c++;
+
             }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
         fLoydsTriangle(5);
     }
 }
+
+class Pattern13 {
+    public static void printTriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                int sum = i + j;
+                if (sum % 2 == 0) {
+                    System.out.print(1);
+                } else {
+                    System.out.print(0);
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        printTriangle(5);
+    }
+}
+
+class Pattern14 {
+    public static void printButterfly(int n) {
+        //1st half
+        for (int i = 1; i <= n; i++) {
+            //stars -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            //spaces -2*(n-1)
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+
+            }
+            //stars -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+        //2nd half
+        for (int i = n; i >= 1; i--) {
+            //stars -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+            //spaces -2*(n-1)
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+
+            }
+            //stars -i
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static void main(String[] args) {
+        printButterfly(4);
+    }
+}
+
+class Pattern15 {
+    public static void printSolidRhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            //print spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            //print stars
+            for (int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        printSolidRhombus(5);
+    }
+}
+
+class Pattern16 {
+    public static void printHollowRhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            //spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 1; j <= n; j++) {
+                //cell - (i,j)
+                if (i == 1 || i == n || j == 1 || j == n) {
+                    //boundary cells
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        printHollowRhombus(5);
+    }
+}
+
+class Pattern17 {
+    public static void printDiamond(int n) {
+
+        for (int i = 1; i <= n; i++) {
+            //spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
+        for (int i = n; i >= 1; i--) {
+            //spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        printDiamond(4);
+    }
+}
+
+
+
